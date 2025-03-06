@@ -1,0 +1,24 @@
+{
+	"name": "Parquet_Branch_DataSet",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "Rohit_ADLS_LS_Gen2",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "Rohit"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"folderPath": "Landing/BranchData",
+				"fileSystem": "rohit"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
